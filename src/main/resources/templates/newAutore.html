@@ -1,0 +1,27 @@
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Inserimento libro</title>
+		<link rel="stylesheet" th:href="@{/styleNewAutore.css}">
+	</head>
+	<body>
+		<form th:action="@{/amministratore/newAutore}" method="POST" th:object="${autore}">
+			<div class="container">
+				<h1>Inserimento di un nuovo autore</h1>
+				<span><input required type="text" th:field="*{nome}" name="nome" placeholder="nome"
+				oninvalid="this.setCustomValidity('Completa questo campo.')" oninput="setCustomValidity('')"></span>
+				<span><input required type="text" th:field="*{cognome}" name="cognome" placeholder="cognome"
+				oninvalid="this.setCustomValidity('Completa questo campo.')" oninput="setCustomValidity('')"></span>
+				Data di nascita:<span><input required type="date" th:field="*{dataNascita}" name="dataNascita" placeholder="data di nascita"
+				oninvalid="this.setCustomValidity('Completa questo campo.')" oninput="setCustomValidity('')"></span>
+				Data di morte:<span><input required type="date" th:field="*{dataMorte}" name="dataMorte" placeholder="data di morte"
+				oninvalid="this.setCustomValidity('Completa questo campo.')" oninput="setCustomValidity('')"></span>
+				<span><input required type="text" th:field="*{nazionalita}" name="nazionalita" placeholder="nazionalita"
+				oninvalid="this.setCustomValidity('Completa questo campo.')" oninput="setCustomValidity('')"></span>
+				<button type="submit">Invia</button>
+			</div>
+		</form>
+		<form th:action="@{/index}" method="GET">
+			<button class="home" type="submit">Indietro</button>
+		</form>
+	</body>
+</html>

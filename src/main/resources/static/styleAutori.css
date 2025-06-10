@@ -1,0 +1,60 @@
+body {
+	font-family: Arial, sans-serif;
+    background-color: rgb(200, 200, 200);
+    padding: 20px;
+    margin: 0;
+	margin-left: 20px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 100vw;
+	height: 100vh;
+}
+
+button {
+	border-radius: 10px;
+	width: 80px;
+	margin-top: 10px;
+	height: 30px;
+}
+
+button:hover {
+	background-color: rgb(200, 200, 200);
+	cursor: pointer;
+}
+
+.author-container {
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	padding: 16px;
+	margin-bottom: 20px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+	max-width: 600px;
+	/*nuovo*/
+	display: flex;
+	flex-direction: column;
+}
+
+.author-name {
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0 0 12px 0;
+	color: #333;
+}
+
+.author-info {
+	 margin: 4px 0;
+	font-size: 14px;
+	color: #555;
+}
+
+.author-info strong {
+	font-weight: 600;
+	color: #333;
+}
+
+.home {
+	position: absolute;
+	top: 20px;
+	right: 20px;	
+}
