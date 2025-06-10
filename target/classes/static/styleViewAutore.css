@@ -1,0 +1,29 @@
+body {
+	background-color: rgb(200, 200, 200);
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+button {
+	width: 120px;
+	height: 40px;
+	font-size: 18px;
+	border-radius: 15px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+button:hover {
+	background-color: rgb(200, 200, 200, 200);
+	cursor: pointer;
+}
+
+div,h1 {
+	padding-left: 30px;
+}
+
+span,p {
+	font-size: 18px;
+}
